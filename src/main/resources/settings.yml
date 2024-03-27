@@ -1,0 +1,88 @@
+#
+# Event configuration
+#
+# formats: HOUR, HOURS, H, MINUTES, MINUTE, M, SECONDS, SECOND, S, DAYS, DAY, D
+time-to-next-event:
+  format: HOURS
+  value: 2
+
+#
+# Set this time in seconds
+event-duration: 60
+#
+# Change the number of items per second during the event
+items-per-seconds: 3
+#
+# Random player actions
+# you can create a new action like this:
+#
+#   random-player-actions:
+#     <key>:
+#       - action list
+#
+# And in your chance configuration add this:
+#
+#   item-chance:
+#     '1':
+#       example-actions:
+#         type: actions
+#         actions:
+#           - "random-player: <key name>"
+#
+random-player-actions:
+  example:
+    - "message: &6%player_name%&e has been selected for a reward of the &6VoteParty"
+    - "console: eco give %player_name% 100"
+
+#
+# all-seconds path, plays the second every second. with this path disabled, the sound will be only playing in 'important seconds'
+#
+# Play a sound during the event task.
+sounds:
+  starting:
+    enabled: true
+    sound: UI_BUTTON_CLICK
+    volume: 1
+    all-seconds: false
+
+#
+# Action System
+# Add actions like this:
+#   item-chance:
+#     '1':
+#       example-actions:
+#         type: actions
+#         actions:
+#           - "message: &6Example!"
+#
+# Action list:
+#   Console command: "console:" or "[console]" or "<console>"
+#   Players command: "players:" or "[players]" or "<players>"
+#   Random player: "random-player:" or "[random-player]" or "<random-player>"
+#
+
+#
+# Settings configuration
+#
+settings:
+  drop-location: NOT_SET
+
+#
+# Item Chances
+#
+item-chance: {}
+
+#
+# Command configuration
+#
+# Warn: do not use '/' on the main command or in aliases, it will create a '//<command>'
+command:
+  # Main command
+  main: voteparty
+  # Aliases for the voteParty command
+  aliases:
+    - vp
+    - vparty
+    - supervotes
+    - svote
+    - sv

@@ -1,0 +1,44 @@
+# This message only appears for console or for the command.
+vote-added:
+  - "&aA vote has been added, current votes: <current>/<max>"
+# This message only appears for console or for the command.
+starting-event:
+  - "&aA VoteParty event is starting."
+# Plugin reloaded
+reload: "&aPlugin has been reloaded in <ms>ms."
+# No permission message:
+no-permission: "&cYou don't have permissions for this action"
+# No Arguments message:
+no-arguments:
+  - "&6&lSuper&e&lVotes &f&ov1.0.1 &7by &fJustJustin"
+  - " "
+  - "&6/voteparty start &7- &fStart a VoteParty Event"
+  - "&6/voteparty now &7- &fStart a VoteParty Event"
+  - "&6/voteparty actions &7- &fSee action list"
+  - "&6/voteparty add &7- &fAdd a vote to your vote list"
+  - "&6/voteparty setarea &7- &fSet the item drop location"
+  - "&6/voteparty additem (chance) &7- &fAdd an item from your hand to the drop item list"
+  - "&6/voteparty reload &7- &fReload the plugin"
+# These message will be sent to all server.
+broadcasts:
+  event:
+    # This message appears for all players including console.
+    started:
+      - "&aA Vote Party event started, please go to the event location to claim your reward"
+    # This message appears for all players including console.
+    cancelled:
+      - "&aA Vote Party event has been cancelled, reason: No event location set."
+  start:
+    # This message appears for all players including console
+    timer-in-seconds:
+      - "&eA Vote Party event starts in &7<time>&e seconds!"
+    # This message appears for all players including console
+    timer-in-second:
+      - "&eA Vote Party event starts in &7<time>&e second!"
+  end:
+    # This message appears for all players including console
+    timer-in-seconds:
+      - "&eA Vote Party event ends in &7<time>&e seconds!"
+    # This message appears for all players including console
+    timer-in-second:
+      - "&eA Vote Party event ends in &7<time>&e second!"

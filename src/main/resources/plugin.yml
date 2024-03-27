@@ -1,0 +1,9 @@
+name: SuperVotes
+version: '${project.version}'
+main: me.blueslime.supervotes.SuperVotes
+author: JustJustin
+authors: [ JustJustin ]
+api-version: 1.13
+softdepend:
+  - PlaceholderAPI
+  - PlaceholdersAPI
