@@ -32,8 +32,8 @@ jobs:
           cache: maven
 
       - name: Maven Build
-        run: |
-          mvn package
+        run: mvn package
+
       - name: 'Upload SuperVote Jar ☁'
         uses: 'actions/upload-artifact@v4'
         with:
